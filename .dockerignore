@@ -1,0 +1,34 @@
+# Node modules (to avoid copying local node_modules into the container)
+node_modules
+
+# Logs
+*.log
+
+# TypeScript build output (if you're transpiling your code before copying)
+dist
+build
+
+# Prisma's generated client files (this can be rebuilt during the Docker build if needed)
+prisma/generated
+
+# Environment files
+.env
+.env.local
+
+# Test directories and files
+test
+tests
+*.spec.ts
+*.test.ts
+
+# Docker-related files
+.dockerignore
+Dockerfile
+
+# IDE or editor folders
+.vscode
+.idea
+
+# OS-specific files
+.DS_Store
+Thumbs.db
